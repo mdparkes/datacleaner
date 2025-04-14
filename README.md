@@ -75,4 +75,6 @@ dc.update_variable('temperature', 'remove_negatives', append_cleaners=False)
 dc.update_variable('temperature', f_to_c, append_cleaner=True)
 ```
 
+## Unit Testing
+Unit testing is set up in `tests/test_datacleaner.py`. You can add other unit tests there. To perform a test, run `python -m unittest tests.test_datacleaner`.
 
