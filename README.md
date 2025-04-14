@@ -63,7 +63,7 @@ str(dc)
 dc(df, variable_column='variable', value_column='value', inplace=False)
 
 # Update a registered cleaner method
-def remove_negatives(x)  # Must have the same name as the original
+def remove_negatives(x):  # Must have the same name as the original
     return np.where(x < 0, 0, x)
 
 dc.update_cleaner(remove_negatives)
